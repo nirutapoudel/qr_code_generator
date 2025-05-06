@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "qrcode": "https://cdn.jsdelivr.net/npm/qrcode@1.5.3/+esm"
+        }
+      }
+    </script>
+</head>
+<body>
+    <h1>QR Code Generator</h1>
+    <div class="container">
+        <label for="url-input">Enter URL:</label>
+        <input type="url" id="url-input" placeholder="https://example.com">
+        <button id="generate-btn">Generate QR Code</button>
+        <div id="qrcode-container">
+            <!-- QR Code will be displayed here -->
+        </div>
+        <a id="download-link" style="display: none;">Download QR Code</a>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
